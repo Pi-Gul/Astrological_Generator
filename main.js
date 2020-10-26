@@ -28,4 +28,4 @@ const arrayOfDescription = ['Feel free to speak your mind at will -- just rememb
                             'Try to be here now! Reminisce away, but do not drown in memories of the past.',
                             'If you can dream it, it is possible. It you can plan it, it is probable. Go for it.'];
 
-console.log(arrayOfDescription);
+console.log(`${Random_Sign_Generator(arrayOfSigns)}: ${Random_Description_Generator(arrayOfDescription)}`);
