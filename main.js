@@ -2,12 +2,8 @@ function Random_Number_Generator (range) {
     return Math.floor(Math.random() * range);
 } 
 
-function Random_Sign_Generator (arrayOfSigns) {
-    return arrayOfSigns[Random_Number_Generator(arrayOfSigns.length)];
-}
-
-function Random_Description_Generator (arrayOfDescription) {
-    return arrayOfDescription[Random_Number_Generator(arrayOfDescription.length)];
+function Random_Fragment_Generator (arr) {
+    return arr[Random_Number_Generator(arr.length)];
 }
 
 const arrayOfSigns = ['Capricorn', 'Aquarius', 'Pisces', 'Aries',
@@ -28,4 +24,4 @@ const arrayOfDescription = ['Feel free to speak your mind at will -- just rememb
                             'Try to be here now! Reminisce away, but do not drown in memories of the past.',
                             'If you can dream it, it is possible. It you can plan it, it is probable. Go for it.'];
 
-console.log(`${Random_Sign_Generator(arrayOfSigns)}: ${Random_Description_Generator(arrayOfDescription)}`);
+console.log(`${Random_Fragment_Generator(arrayOfSigns)}: ${Random_Fragment_Generator(arrayOfDescription)}`);
